@@ -1,6 +1,7 @@
 const btns = document.querySelectorAll('.gallery__button'),
       gallery = document.querySelector('.gallery__image'),
-      loading = document.querySelector('.gallery__loading');
+      loading = document.querySelector('.gallery__loading'),
+      buttonBelow  =document.querySelector('#buttonBelow');
 
 async function getImage(quantity){
     loading.style.display = 'flex';
@@ -21,6 +22,7 @@ async function getImage(quantity){
         console.log(err.message);
     }finally{
         loading.style.display = 'none';
+        buttonBelow.style.display = 'block';
     }
 };
 

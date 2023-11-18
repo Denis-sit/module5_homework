@@ -15,6 +15,10 @@
     font-family: cursive;
 }
 
+#buttonBelow{
+    display: none;
+}
+
 .gallery__image{
     display: flex;
     justify-content: center;
